@@ -1,0 +1,36 @@
+object frmEmprestimo: TfrmEmprestimo
+  Left = -8
+  Height = 810
+  Top = 0
+  Width = 1275
+  Caption = 'frmEmprestimo'
+  ClientHeight = 810
+  ClientWidth = 1275
+  DesignTimePPI = 120
+  LCLVersion = '2.2.4.0'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 794
+    Top = 0
+    Width = 1240
+    ActivePage = Emprestar
+    TabIndex = 1
+    TabOrder = 0
+    object Consultar: TTabSheet
+      Caption = 'Consultar'
+    end
+    object Emprestar: TTabSheet
+      Caption = 'Emprestar'
+      ClientHeight = 761
+      ClientWidth = 1232
+      object DBEdit1: TDBEdit
+        Left = 216
+        Height = 28
+        Top = 64
+        Width = 100
+        MaxLength = 0
+        TabOrder = 0
+      end
+    end
+  end
+end

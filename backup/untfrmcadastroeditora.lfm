@@ -1,0 +1,103 @@
+object frmCadastroEditora: TfrmCadastroEditora
+  Left = 604
+  Height = 582
+  Top = 294
+  Width = 890
+  Caption = 'man Editora'
+  ClientHeight = 582
+  ClientWidth = 890
+  DesignTimePPI = 120
+  LCLVersion = '2.2.4.0'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 544
+    Top = 0
+    Width = 704
+    ActivePage = TabSheet1
+    TabIndex = 0
+    TabOrder = 0
+    object TabSheet1: TTabSheet
+      Caption = 'Consultar'
+      ClientHeight = 511
+      ClientWidth = 696
+      object DBGrid1: TDBGrid
+        Left = -4
+        Height = 221
+        Top = 0
+        Width = 698
+        Color = clWindow
+        Columns = <>
+        DataSource = frmCadastroObra.dtSourceEditora
+        TabOrder = 0
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Editar'
+      ClientHeight = 511
+      ClientWidth = 696
+      object DBEdit1: TDBEdit
+        Left = 176
+        Height = 28
+        Top = 92
+        Width = 164
+        DataField = 'nome'
+        DataSource = dtSourceEditora
+        MaxLength = 50
+        TabOrder = 0
+        OnChange = DBEdit1Change
+      end
+      object Label1: TLabel
+        Left = 88
+        Height = 20
+        Top = 100
+        Width = 41
+        Caption = 'Nome'
+        ParentColor = False
+        OnClick = Label1Click
+      end
+      object DBEdit2: TDBEdit
+        Left = 176
+        Height = 28
+        Top = 56
+        Width = 100
+        DataField = 'edt_codigo'
+        DataSource = dtSourceEditora
+        Alignment = taRightJustify
+        MaxLength = 0
+        TabOrder = 1
+      end
+      object Label2: TLabel
+        Left = 88
+        Height = 20
+        Top = 56
+        Width = 81
+        Caption = 'Cod_Editora'
+        ParentColor = False
+      end
+      object DBNavigator1: TDBNavigator
+        Left = 152
+        Height = 31
+        Top = 192
+        Width = 301
+        BevelOuter = bvNone
+        ChildSizing.EnlargeHorizontal = crsScaleChilds
+        ChildSizing.EnlargeVertical = crsScaleChilds
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 100
+        ClientHeight = 31
+        ClientWidth = 301
+        DataSource = frmCadastroObra.dtSourceEditora
+        Options = []
+        TabOrder = 2
+      end
+    end
+  end
+  object dtSourceEditora: TDataSource
+    DataSet = dmConexao.qryEditora
+    OnDataChange = dtSourceEditoraDataChange
+    Left = 832
+    Top = 496
+  end
+end

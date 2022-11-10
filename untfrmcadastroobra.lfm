@@ -1,0 +1,393 @@
+object frmCadastroObra: TfrmCadastroObra
+  Left = 22
+  Height = 764
+  Top = 55
+  Width = 1363
+  Caption = 'man Obra'
+  ClientHeight = 0
+  ClientWidth = 0
+  DesignTimePPI = 120
+  LCLVersion = '2.2.4.0'
+  object PageControl1: TPageControl
+    Left = -7
+    Height = 417
+    Top = -1
+    Width = 927
+    ActivePage = Editar
+    TabIndex = 1
+    TabOrder = 0
+    object Consultar: TTabSheet
+      Caption = 'Consultar'
+      ClientHeight = 384
+      ClientWidth = 919
+      object DBGrid3: TDBGrid
+        Left = 8
+        Height = 328
+        Top = 0
+        Width = 816
+        Color = clWindow
+        Columns = <>
+        DataSource = dtSourceObra
+        TabOrder = 0
+      end
+    end
+    object Editar: TTabSheet
+      Caption = 'Editar'
+      ClientHeight = 384
+      ClientWidth = 919
+      object DBEdit1: TDBEdit
+        Left = 152
+        Height = 28
+        Top = 48
+        Width = 100
+        DataField = 'obr_codigo'
+        DataSource = dtSourceObra
+        Alignment = taRightJustify
+        MaxLength = 0
+        TabOrder = 0
+      end
+      object DBEdit2: TDBEdit
+        Left = 152
+        Height = 28
+        Top = 96
+        Width = 100
+        DataField = 'titulo'
+        DataSource = dtSourceObra
+        MaxLength = 50
+        TabOrder = 1
+      end
+      object Label1: TLabel
+        Left = 48
+        Height = 20
+        Top = 48
+        Width = 76
+        Caption = 'obr_codigo'
+        ParentColor = False
+        OnClick = Label1Click
+      end
+      object Label2: TLabel
+        Left = 48
+        Height = 20
+        Top = 104
+        Width = 35
+        Caption = 'titulo'
+        ParentColor = False
+      end
+      object Label3: TLabel
+        Left = 48
+        Height = 20
+        Top = 160
+        Width = 27
+        Caption = 'tipo'
+        ParentColor = False
+      end
+      object Label4: TLabel
+        Left = 48
+        Height = 20
+        Top = 224
+        Width = 48
+        Caption = 'Editora'
+        ParentColor = False
+      end
+      object DBComboBox1: TDBComboBox
+        Left = 152
+        Height = 28
+        Hint = 'L'#13#10'A'#13#10'M'
+        Top = 152
+        Width = 125
+        DataField = 'tipo_obra'
+        DataSource = dtSourceObra
+        ItemHeight = 20
+        MaxLength = 0
+        TabOrder = 2
+      end
+      object DBLookupComboBox1: TDBLookupComboBox
+        Left = 152
+        Height = 28
+        Top = 216
+        Width = 125
+        DataField = 'obr_codigo'
+        DataSource = dtSourceObra
+        KeyField = 'edt_codigo'
+        ListField = 'nome'
+        ListFieldIndex = 0
+        ListSource = dtSourceEditora
+        LookupCache = False
+        TabOrder = 3
+      end
+    end
+  end
+  object PageControl2: TPageControl
+    Left = 0
+    Height = 450
+    Top = 320
+    Width = 912
+    ActivePage = TabSheet3
+    TabIndex = 2
+    TabOrder = 1
+    OnChange = PageControl2Change
+    object TabSheet1: TTabSheet
+      Caption = 'ObraAutor'
+      ClientHeight = 417
+      ClientWidth = 904
+      object DBGrid1: TDBGrid
+        Left = 0
+        Height = 200
+        Top = 0
+        Width = 904
+        Align = alTop
+        Color = clWindow
+        Columns = <>
+        DataSource = dtSourceObraAutor
+        TabOrder = 0
+      end
+      object DBNavigator2: TDBNavigator
+        Left = 338
+        Height = 31
+        Top = 222
+        Width = 301
+        BevelOuter = bvNone
+        ChildSizing.EnlargeHorizontal = crsScaleChilds
+        ChildSizing.EnlargeVertical = crsScaleChilds
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 100
+        ClientHeight = 31
+        ClientWidth = 301
+        DataSource = dtSourceAutor
+        Options = []
+        TabOrder = 1
+      end
+      object DBGrid5: TDBGrid
+        Left = 0
+        Height = 157
+        Top = 256
+        Width = 906
+        Color = clWindow
+        Columns = <>
+        DataSource = dtSourceAutor
+        TabOrder = 2
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'ObraAssunto'
+      ClientHeight = 417
+      ClientWidth = 904
+      object DBGrid2: TDBGrid
+        Left = 0
+        Height = 189
+        Top = 0
+        Width = 904
+        Align = alTop
+        Color = clWindow
+        Columns = <>
+        DataSource = dtSourceObraAssunto
+        TabOrder = 0
+      end
+      object DBNavigator1: TDBNavigator
+        Left = 289
+        Height = 31
+        Top = 210
+        Width = 301
+        BevelOuter = bvNone
+        ChildSizing.EnlargeHorizontal = crsScaleChilds
+        ChildSizing.EnlargeVertical = crsScaleChilds
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 100
+        ClientHeight = 31
+        ClientWidth = 301
+        DataSource = dtSourceAssunto
+        Options = []
+        TabOrder = 1
+      end
+      object DBGrid6: TDBGrid
+        Left = 0
+        Height = 176
+        Top = 240
+        Width = 904
+        Color = clWindow
+        Columns = <>
+        DataSource = dtSourceAssunto
+        TabOrder = 2
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Exemplar'
+      ClientHeight = 417
+      ClientWidth = 904
+      object DBGrid4: TDBGrid
+        Left = -7
+        Height = 216
+        Top = 0
+        Width = 909
+        Color = clWindow
+        Columns = <>
+        DataSource = dtSourceObraExemplar
+        TabOrder = 0
+      end
+      object DBNavigator3: TDBNavigator
+        Left = 328
+        Height = 31
+        Top = 232
+        Width = 301
+        BevelOuter = bvNone
+        ChildSizing.EnlargeHorizontal = crsScaleChilds
+        ChildSizing.EnlargeVertical = crsScaleChilds
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 100
+        ClientHeight = 31
+        ClientWidth = 301
+        DataSource = dtSourceObraExemplar
+        Options = []
+        TabOrder = 1
+      end
+    end
+  end
+  object dtSourceObra: TDataSource
+    DataSet = dmConexao.qryObra
+    Left = 960
+    Top = 264
+  end
+  object dtSourceEditora: TDataSource
+    DataSet = dmConexao.qryEditora
+    Left = 1080
+    Top = 264
+  end
+  object dtSourceAssunto: TDataSource
+    DataSet = dmConexao.qryAssunto
+    Left = 960
+    Top = 352
+  end
+  object dtSourceAutor: TDataSource
+    DataSet = dmConexao.qryAutor
+    Left = 1072
+    Top = 352
+  end
+  object qryObraAssunto: TZQuery
+    Connection = dmConexao.dbCon
+    UpdateObject = qryUpdateObraAssunto
+    SQL.Strings = (
+      'select * from obra_assunto'
+      'where'
+      'obra_assunto.obr_codigo = :obr_codigo'
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'obr_codigo'
+        ParamType = ptUnknown
+      end>
+    Left = 984
+    Top = 584
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'obr_codigo'
+        ParamType = ptUnknown
+      end>
+    object qryObraAssuntoobr_codigo: TLargeintField
+      FieldKind = fkData
+      FieldName = 'obr_codigo'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryObraAssuntoass_codigo: TLargeintField
+      FieldKind = fkData
+      FieldName = 'ass_codigo'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object qryObraAutor: TZQuery
+    Connection = dmConexao.dbCon
+    UpdateObject = qryUpdtaeObraAutor
+    SQL.Strings = (
+      'select obra_autor.*, autor.nome from obra_autor, autor'
+      'where  '
+      'autor.aut_codigo = obra_autor.aut_codigo AND'
+      ''
+      'obra_autor.obr_codigo = :obr_codigo'
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'obr_codigo'
+        ParamType = ptUnknown
+      end>
+    DataSource = dtSourceObra
+    Left = 984
+    Top = 496
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'obr_codigo'
+        ParamType = ptUnknown
+      end>
+  end
+  object dtSourceObraAutor: TDataSource
+    DataSet = qryObraAutor
+    OnDataChange = dtSourceObraAutorDataChange
+    Left = 1088
+    Top = 496
+  end
+  object dtSourceObraAssunto: TDataSource
+    DataSet = qryObraAssunto
+    OnDataChange = dtSourceObraAssuntoDataChange
+    Left = 1096
+    Top = 584
+  end
+  object qryObraExemplar: TZQuery
+    Connection = dmConexao.dbCon
+    UpdateObject = qryUpdateObraExemplar
+    Active = True
+    SQL.Strings = (
+      'select * from exemplar'
+      'where exemplar.obr_codigo = :obr_codigo '
+    )
+    Params = <    
+      item
+        DataType = ftUnknown
+        Name = 'obr_codigo'
+        ParamType = ptUnknown
+      end>
+    Left = 984
+    Top = 672
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'obr_codigo'
+        ParamType = ptUnknown
+      end>
+  end
+  object dtSourceObraExemplar: TDataSource
+    DataSet = qryObraExemplar
+    Left = 1096
+    Top = 672
+  end
+  object qryUpdtaeObraAutor: TZUpdateSQL
+    UseSequenceFieldForRefreshSQL = False
+    Left = 1248
+    Top = 496
+  end
+  object qryUpdateObraAssunto: TZUpdateSQL
+    UseSequenceFieldForRefreshSQL = False
+    Left = 1248
+    Top = 584
+  end
+  object qryUpdateObraExemplar: TZUpdateSQL
+    UseSequenceFieldForRefreshSQL = False
+    Left = 1248
+    Top = 672
+  end
+end

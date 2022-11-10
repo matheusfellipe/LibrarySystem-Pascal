@@ -1,0 +1,44 @@
+object frmCadastroAssunto: TfrmCadastroAssunto
+  Left = -1367
+  Height = 240
+  Top = 309
+  Width = 518
+  Caption = 'man Assunto'
+  ClientHeight = 0
+  ClientWidth = 0
+  LCLVersion = '2.2.2.0'
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 128
+    Top = 0
+    Width = 496
+    Color = clWindow
+    Columns = <>
+    DataSource = dtSourceAssunto
+    TabOrder = 0
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 128
+    Height = 25
+    Top = 152
+    Width = 241
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 241
+    DataSource = dtSourceAssunto
+    Options = []
+    TabOrder = 1
+  end
+  object dtSourceAssunto: TDataSource
+    DataSet = dmConexao.qryAssunto
+    OnDataChange = dtSourceAssuntoDataChange
+    Left = 464
+    Top = 213
+  end
+end

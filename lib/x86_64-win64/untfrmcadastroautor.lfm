@@ -1,0 +1,44 @@
+object frmCadastroAutor: TfrmCadastroAutor
+  Left = -1234
+  Height = 255
+  Top = 237
+  Width = 341
+  Caption = 'manu Autor'
+  ClientHeight = 255
+  ClientWidth = 341
+  LCLVersion = '2.2.2.0'
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 184
+    Top = 0
+    Width = 320
+    Color = clWindow
+    Columns = <>
+    DataSource = dtSourceAutor
+    TabOrder = 0
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 48
+    Height = 25
+    Top = 184
+    Width = 241
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 241
+    DataSource = dtSourceAutor
+    Options = []
+    TabOrder = 1
+  end
+  object dtSourceAutor: TDataSource
+    DataSet = dmConexao.qryAutor
+    OnDataChange = dtSourceAutorDataChange
+    Left = 296
+    Top = 192
+  end
+end

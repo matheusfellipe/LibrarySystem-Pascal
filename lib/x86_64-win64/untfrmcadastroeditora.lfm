@@ -1,0 +1,41 @@
+object frmCadastroEditora: TfrmCadastroEditora
+  Left = -1311
+  Height = 240
+  Top = 302
+  Width = 712
+  Caption = 'man Editora'
+  ClientHeight = 240
+  ClientWidth = 712
+  LCLVersion = '2.2.2.0'
+  object DBGrid1: TDBGrid
+    Left = 0
+    Height = 140
+    Top = 0
+    Width = 544
+    Color = clWindow
+    Columns = <>
+    TabOrder = 0
+  end
+  object DBNavigator1: TDBNavigator
+    Left = 164
+    Height = 25
+    Top = 156
+    Width = 241
+    BevelOuter = bvNone
+    ChildSizing.EnlargeHorizontal = crsScaleChilds
+    ChildSizing.EnlargeVertical = crsScaleChilds
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 100
+    ClientHeight = 25
+    ClientWidth = 241
+    Options = []
+    TabOrder = 1
+  end
+  object dtSourceEditora: TDataSource
+    DataSet = dmConexao.qryEditora
+    Left = 479
+    Top = 188
+  end
+end
