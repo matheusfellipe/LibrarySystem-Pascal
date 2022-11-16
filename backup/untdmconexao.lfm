@@ -3,7 +3,7 @@ object dmConexao: TdmConexao
   OldCreateOrder = False
   Height = 560
   HorizontalOffset = 1060
-  VerticalOffset = 309
+  VerticalOffset = 300
   Width = 620
   PPI = 120
   object dbCon: TZConnection
@@ -235,7 +235,6 @@ object dmConexao: TdmConexao
   object qryObra: TZQuery
     Connection = dbCon
     UpdateObject = qryUpdateObra
-    Active = True
     SQL.Strings = (
       'select * from obra'
     )

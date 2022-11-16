@@ -16,9 +16,6 @@ type
   TfrmPrincipal = class(TForm)
     MainMenu1: TMainMenu;
     MenuItem1: TMenuItem;
-    MenuItem10: TMenuItem;
-    MenuItem11: TMenuItem;
-    MenuItem12: TMenuItem;
     MenuItem2: TMenuItem;
     MenuItem3: TMenuItem;
     MenuItem4: TMenuItem;
@@ -26,7 +23,6 @@ type
     MenuItem6: TMenuItem;
     MenuItem7: TMenuItem;
     MenuItem8: TMenuItem;
-    MenuItem9: TMenuItem;
     StatusBar1: TStatusBar;
     procedure FormCreate(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);

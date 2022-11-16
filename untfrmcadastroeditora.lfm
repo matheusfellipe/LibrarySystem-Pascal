@@ -4,17 +4,18 @@ object frmCadastroEditora: TfrmCadastroEditora
   Top = 274
   Width = 890
   Caption = 'man Editora'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 582
+  ClientWidth = 890
   DesignTimePPI = 120
+  Position = poScreenCenter
   LCLVersion = '2.2.4.0'
   object PageControl1: TPageControl
     Left = 0
     Height = 544
     Top = 0
     Width = 704
-    ActivePage = TabSheet1
-    TabIndex = 0
+    ActivePage = TabSheet2
+    TabIndex = 1
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = 'Consultar'

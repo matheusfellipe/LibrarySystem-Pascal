@@ -5,18 +5,21 @@ unit untfrmemprestimo;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ComCtrls, DBCtrls,
-  StdCtrls;
+  Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, ComCtrls, DBCtrls,
+  StdCtrls, ZDataset, ZSqlUpdate;
 
 type
 
   { TfrmEmprestimo }
 
   TfrmEmprestimo = class(TForm)
+    dtSourceEmprestimo: TDataSource;
     DBEdit1: TDBEdit;
     PageControl1: TPageControl;
     Consultar: TTabSheet;
     Emprestar: TTabSheet;
+    qryEmprestimo: TZQuery;
+    updQryEmprestimo: TZUpdateSQL;
     procedure emp_codigoClick(Sender: TObject);
     procedure Label1Click(Sender: TObject);
   private
@@ -41,7 +44,7 @@ end;
 
 procedure TfrmEmprestimo.Label1Click(Sender: TObject);
 begin
-  fgdd
+
 end;
 
 end.

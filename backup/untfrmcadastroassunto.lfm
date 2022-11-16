@@ -1,7 +1,7 @@
 object frmCadastroAssunto: TfrmCadastroAssunto
-  Left = 565
+  Left = 680
   Height = 498
-  Top = 349
+  Top = 324
   Width = 823
   Caption = 'man Assunto'
   ClientHeight = 498

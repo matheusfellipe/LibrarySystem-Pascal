@@ -47,18 +47,6 @@ object frmPrincipal: TfrmPrincipal
     object MenuItem7: TMenuItem
       Caption = 'Empréstimo'
       OnClick = MenuItem7Click
-      object MenuItem9: TMenuItem
-        Caption = '45544545'
-      end
-      object MenuItem10: TMenuItem
-        Caption = 'MenuItem10'
-      end
-      object MenuItem11: TMenuItem
-        Caption = 'MenuItem11'
-      end
-      object MenuItem12: TMenuItem
-        Caption = 'MenuItem12'
-      end
     end
     object MenuItem8: TMenuItem
       Caption = 'Sair'

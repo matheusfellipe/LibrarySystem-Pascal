@@ -40,6 +40,7 @@ type
     Editar: TTabSheet;
     procedure Edit1Change(Sender: TObject);
     procedure NomeClick(Sender: TObject);
+    procedure NumeroClick(Sender: TObject);
     procedure usu_codigoClick(Sender: TObject);
     procedure MenuItem1Click(Sender: TObject);
   private
@@ -73,6 +74,11 @@ begin
 end;
 
 procedure TfrmCadastroUsuario.NomeClick(Sender: TObject);
+begin
+
+end;
+
+procedure TfrmCadastroUsuario.NumeroClick(Sender: TObject);
 begin
 
 end;

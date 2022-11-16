@@ -8,11 +8,11 @@
       <Unit>
         <Filename Value="bib.lpr"/>
         <IsPartOfProject Value="True"/>
-        <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <TopLine Value="-1"/>
-        <CursorPos X="-1" Y="-1"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="16"/>
+        <CursorPos Y="33"/>
         <UsageCount Value="1030"/>
+        <Loaded Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="untfrmprincipal.pas"/>
@@ -21,13 +21,11 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untFrmPrincipal"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="5"/>
         <TopLine Value="61"/>
         <CursorPos X="3" Y="63"/>
-        <ComponentState Value="1"/>
         <UsageCount Value="1030"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="untdmconexao.pas"/>
@@ -36,10 +34,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="untDmConexao"/>
-        <EditorIndex Value="5"/>
+        <EditorIndex Value="6"/>
         <TopLine Value="6"/>
-        <CursorPos X="72" Y="13"/>
-        <ComponentState Value="1"/>
+        <CursorPos X="36" Y="14"/>
         <UsageCount Value="1030"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -50,8 +47,8 @@
         <ComponentName Value="frmCadastroUsuario"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <TopLine Value="58"/>
-        <CursorPos X="8" Y="73"/>
+        <TopLine Value="56"/>
+        <CursorPos X="37" Y="70"/>
         <UsageCount Value="1029"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -62,10 +59,9 @@
         <ComponentName Value="frmCadastroAutor"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="7"/>
-        <TopLine Value="20"/>
-        <CursorPos X="3" Y="43"/>
-        <ComponentState Value="1"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="21"/>
+        <CursorPos X="63" Y="28"/>
         <UsageCount Value="1028"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -76,13 +72,11 @@
         <ComponentName Value="frmCadastroEditora"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="3"/>
+        <EditorIndex Value="4"/>
         <TopLine Value="33"/>
         <CursorPos X="61" Y="45"/>
-        <ComponentState Value="1"/>
         <UsageCount Value="1027"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="untfrmcadastroassunto.pas"/>
@@ -90,13 +84,11 @@
         <ComponentName Value="frmCadastroAssunto"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="6"/>
-        <TopLine Value="37"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="35"/>
         <CursorPos X="55" Y="39"/>
-        <ComponentState Value="1"/>
         <UsageCount Value="1027"/>
         <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="untfrmcadastroobra.pas"/>
@@ -104,10 +96,10 @@
         <ComponentName Value="frmCadastroObra"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="112"/>
-        <CursorPos X="51" Y="123"/>
-        <ComponentState Value="1"/>
+        <TopLine Value="146"/>
+        <CursorPos X="31" Y="155"/>
         <UsageCount Value="1026"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -118,135 +110,134 @@
         <ComponentName Value="frmEmprestimo"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="25"/>
-        <CursorPos X="28" Y="40"/>
-        <UsageCount Value="46"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="27"/>
+        <CursorPos X="25" Y="35"/>
+        <UsageCount Value="81"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
       <Position>
-        <Filename Value="untfrmcadastrousuario.pas"/>
-        <Caret Line="68" Column="3" TopLine="49"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="115" Column="35" TopLine="108"/>
       </Position>
       <Position>
-        <Filename Value="untfrmcadastrousuario.pas"/>
-        <Caret Line="69" Column="3" TopLine="50"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="116" Column="35" TopLine="109"/>
       </Position>
       <Position>
-        <Filename Value="untfrmcadastrousuario.pas"/>
-        <Caret Line="70" Column="3" TopLine="51"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="115" Column="35" TopLine="108"/>
       </Position>
       <Position>
-        <Filename Value="untfrmcadastrousuario.pas"/>
-        <Caret Line="71" Column="3" TopLine="52"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="116" Column="35" TopLine="109"/>
       </Position>
       <Position>
-        <Filename Value="untfrmcadastrousuario.pas"/>
-        <Caret Line="72" Column="3" TopLine="53"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="115" Column="35" TopLine="108"/>
       </Position>
       <Position>
-        <Filename Value="untfrmcadastrousuario.pas"/>
-        <Caret Line="73" Column="3" TopLine="54"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="116" Column="35" TopLine="109"/>
       </Position>
       <Position>
-        <Filename Value="untfrmcadastrousuario.pas"/>
-        <Caret Line="74" Column="3" TopLine="55"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="117" Column="35" TopLine="110"/>
       </Position>
       <Position>
-        <Filename Value="untfrmcadastrousuario.pas"/>
-        <Caret Line="75" Column="3" TopLine="56"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="118" Column="35" TopLine="111"/>
       </Position>
       <Position>
-        <Filename Value="untfrmcadastrousuario.pas"/>
-        <Caret Line="76" Column="3" TopLine="57"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="119" Column="35" TopLine="112"/>
       </Position>
       <Position>
-        <Filename Value="untfrmcadastroautor.pas"/>
-        <Caret Line="37" Column="3" TopLine="7"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="120" Column="35" TopLine="113"/>
       </Position>
       <Position>
-        <Filename Value="untfrmcadastroautor.pas"/>
-        <Caret Line="36" Column="3" TopLine="13"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="128" Column="22" TopLine="114"/>
       </Position>
       <Position>
-        <Filename Value="untfrmcadastroautor.pas"/>
-        <Caret Line="35" Column="3" TopLine="13"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="129" Column="22" TopLine="115"/>
       </Position>
       <Position>
-        <Filename Value="untfrmcadastroautor.pas"/>
-        <Caret Line="36" Column="3" TopLine="14"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="130" Column="32" TopLine="122"/>
       </Position>
       <Position>
-        <Filename Value="untfrmcadastroautor.pas"/>
-        <Caret Line="37" Column="3" TopLine="14"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroautor.pas"/>
-        <Caret Line="38" Column="3" TopLine="15"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroautor.pas"/>
-        <Caret Line="39" Column="3" TopLine="16"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroautor.pas"/>
-        <Caret Line="40" Column="3" TopLine="17"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroautor.pas"/>
-        <Caret Line="41" Column="3" TopLine="18"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroautor.pas"/>
-        <Caret Line="42" Column="3" TopLine="19"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="154" TopLine="136"/>
       </Position>
       <Position>
         <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="13" Column="48"/>
+        <Caret Line="34" Column="35" TopLine="24"/>
       </Position>
       <Position>
         <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="38" Column="3" TopLine="19"/>
+        <Caret Line="33" Column="48" TopLine="25"/>
       </Position>
       <Position>
         <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="37" Column="3" TopLine="18"/>
+        <Caret Line="36" Column="42" TopLine="26"/>
       </Position>
       <Position>
-        <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="38" Column="3" TopLine="19"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="152" Column="37" TopLine="142"/>
       </Position>
       <Position>
-        <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="40" Column="3" TopLine="20"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="151" Column="37" TopLine="141"/>
       </Position>
       <Position>
-        <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="41" Column="28" TopLine="26"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="160" Column="18" TopLine="143"/>
       </Position>
       <Position>
-        <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="42" Column="28" TopLine="27"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="164" Column="20" TopLine="146"/>
       </Position>
       <Position>
-        <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="41" Column="28" TopLine="26"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="159" Column="31" TopLine="146"/>
       </Position>
       <Position>
-        <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="42" Column="28" TopLine="27"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="158" Column="31" TopLine="145"/>
       </Position>
       <Position>
-        <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="41" Column="28" TopLine="26"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="159" Column="30" TopLine="146"/>
       </Position>
       <Position>
-        <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="40" Column="28" TopLine="25"/>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="158" Column="30" TopLine="145"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="157" Column="30" TopLine="144"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="159" Column="21" TopLine="145"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="158" Column="34" TopLine="146"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="161" Column="31" TopLine="146"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmcadastroobra.pas"/>
+        <Caret Line="160" Column="31" TopLine="145"/>
       </Position>
     </JumpHistory>
     <RunParams>

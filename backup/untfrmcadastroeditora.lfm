@@ -1,7 +1,7 @@
 object frmCadastroEditora: TfrmCadastroEditora
   Left = 604
   Height = 582
-  Top = 294
+  Top = 274
   Width = 890
   Caption = 'man Editora'
   ClientHeight = 582
@@ -13,8 +13,8 @@ object frmCadastroEditora: TfrmCadastroEditora
     Height = 544
     Top = 0
     Width = 704
-    ActivePage = TabSheet1
-    TabIndex = 0
+    ActivePage = TabSheet2
+    TabIndex = 1
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = 'Consultar'
