@@ -10,9 +10,9 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, zcomponent, untFrmPrincipal, untDmConexao, untfrmcadastrousuario, 
-untfrmcadastroautor, untfrmcadastroeditora, untfrmcadastroassunto, 
-untfrmcadastroobra, untfrmemprestimo, upesquisa
+  Forms, datetimectrls, zcomponent, untFrmPrincipal, untDmConexao,
+  untfrmcadastrousuario, untfrmcadastroautor, untfrmcadastroeditora,
+  untfrmcadastroassunto, untfrmcadastroobra, untfrmemprestimo, upesquisa
   { you can add units after this };
 
 {$R *.res}

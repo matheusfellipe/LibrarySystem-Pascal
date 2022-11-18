@@ -1,7 +1,7 @@
 object frmEmprestimo: TfrmEmprestimo
-  Left = 222
+  Left = 198
   Height = 810
-  Top = 76
+  Top = 123
   Width = 1476
   Caption = 'frmEmprestimo'
   ClientHeight = 810
@@ -19,6 +19,19 @@ object frmEmprestimo: TfrmEmprestimo
     TabOrder = 0
     object Consultar: TTabSheet
       Caption = 'Consultar'
+      ClientHeight = 761
+      ClientWidth = 1232
+      object DBGrid1: TDBGrid
+        Left = 0
+        Height = 544
+        Top = 0
+        Width = 1232
+        AutoFillColumns = True
+        Color = clWindow
+        Columns = <>
+        DataSource = dtSourceEmprestimo
+        TabOrder = 0
+      end
     end
     object Emprestar: TTabSheet
       Caption = 'Emprestar'
@@ -26,73 +39,73 @@ object frmEmprestimo: TfrmEmprestimo
       ClientWidth = 1232
       OnContextPopup = EmprestarContextPopup
       object DBEdit1: TDBEdit
-        Left = 240
+        Left = 384
         Height = 28
-        Top = 80
-        Width = 224
+        Top = 40
+        Width = 68
         MaxLength = 0
         TabOrder = 0
       end
       object Label1: TLabel
-        Left = 64
+        Left = 214
         Height = 20
-        Top = 88
+        Top = 48
         Width = 155
         Caption = 'Código do Empréstimo'
         ParentColor = False
       end
       object Label2: TLabel
-        Left = 186
+        Left = 336
         Height = 20
-        Top = 184
+        Top = 136
         Width = 33
         Caption = 'Obra'
         ParentColor = False
       end
       object Label3: TLabel
-        Left = 520
+        Left = 309
         Height = 20
-        Top = 184
+        Top = 176
         Width = 62
         Caption = 'Exemplar'
         ParentColor = False
       end
       object Label4: TLabel
-        Left = 81
+        Left = 288
         Height = 20
-        Top = 296
+        Top = 232
         Width = 138
         Caption = 'Data do Empréstimo'
         ParentColor = False
       end
       object Label5: TLabel
-        Left = 520
+        Left = 720
         Height = 20
-        Top = 296
+        Top = 232
         Width = 164
         Caption = 'Previsão para Devolução'
         ParentColor = False
       end
       object Label6: TLabel
-        Left = 135
+        Left = 287
         Height = 20
-        Top = 376
+        Top = 312
         Width = 84
         Caption = 'Observações'
         ParentColor = False
       end
       object Label7: TLabel
-        Left = 520
+        Left = 319
         Height = 20
-        Top = 88
+        Top = 96
         Width = 50
         Caption = 'Usuário'
         ParentColor = False
       end
       object DBEdit2: TDBEdit
-        Left = 680
+        Left = 488
         Height = 28
-        Top = 80
+        Top = 88
         Width = 264
         DataField = 'nome'
         DataSource = dtSourceEmprestimo
@@ -100,22 +113,173 @@ object frmEmprestimo: TfrmEmprestimo
         TabOrder = 1
       end
       object SpeedButton1: TSpeedButton
-        Left = 1608
+        Left = 456
         Height = 28
-        Top = -264
+        Top = 88
         Width = 29
+        Glyph.Data = {
+          8A040000424D8A040000000000008A0000007C00000010000000100000000100
+          20000300000000040000000000000000000000000000000000000000FF0000FF
+          0000FF000000000000FF424752738FC2F52851B81E151E85EB01333333136666
+          662666666606999999093D0AD703285C8F320000000000000000000000000400
+          0000000000000000000000000000FFFEFFFFFFFEFEFFFEFEFEFFFFFEFFFFFEFF
+          FFFFFFFFFFFFE6E7E6FFE6E6E7FFE7E6E6FFE7E7E7FFE6E6E7FF010000FFFFFE
+          FFFFFFFFFFFFFEFFFFFFFFFEFFFFE6E7E6FFE6E6E7FFE7E6E6FFE6E6E6FFE6E6
+          E6FFE7E6E6FFFEFEFEFFFFFFFEFFFFFEFFFFFFFFFFFF000100FF000000FFE6E6
+          E6FFE6E6E7FFE6E7E7FFE7E7E6FFE7E6E6FFE6E6E7FFE6E6E7FFE6E6E6FFE6E6
+          E6FFE6E6E6FFFFFFFFFFFFFEFFFFFFFFFFFFFFFFFFFF010000FF000100FFE6E6
+          E7FFE7E6E7FFE6E6E6FFE6E6E6FFE7E6E6FFE6E7E6FFE7E6E7FFE6E6E6FFE6E6
+          E6FFE6E7E7FFFFFFFFFFFEFFFFFFFFFFFFFF000000FF000000FF010100FFE6E6
+          E6FFE6E6E7FFE6E6E6FFE6E6E6FFE7E6E6FFE6E6E6FFE6E6E6FFE7E6E7FFE6E6
+          E6FFE6E7E7FFFFFFFFFFFFFFFEFFFFFFFFFF000100FF010000FFFFFFFEFFE6E6
+          E6FFE6E6E6FFE6E6E7FFE7E6E6FFE6E6E6FFE6E6E7FFE6E6E6FFE7E6E7FFE7E6
+          E7FF000000FF000000FF000001FF000000FF000001FF010100FFFFFFFFFFE6E6
+          E6FFE6E6E6FFE7E6E6FFE6E7E6FFE7E6E6FFE7E6E6FFE6E7E6FFE6E6E6FF0000
+          00FF000100FFFFFFFFFFFEFFFFFF000000FF000000FFFFFFFEFFFEFFFEFFE6E7
+          E6FFE6E6E6FFE7E6E6FFE6E6E6FFE6E6E7FFE6E6E7FFE6E6E6FFE7E7E6FF0100
+          00FFE6E6E6FFFEFFFFFFFFFFFEFF000000FF000000FFFEFEFFFFFFFFFFFFE6E7
+          E6FFE6E6E7FFE6E6E6FFE7E7E6FFF2F3F2FFF3F2F2FFF2F2F2FFF3F2F2FF0000
+          00FF000100FFF2F2F3FFF2F2F2FFF2F2F3FF010001FFF2F2F2FFF2F2F2FFF3F3
+          F2FFF2F2F2FFF3F2F2FFF2F2F2FFFFFEFEFFFEFEFFFFFEFFFFFFFFFFFFFFFFFF
+          FFFFFFFFFFFFE7E6E6FFE6E7E6FFE6E7E7FF000000FFE6E6E6FFE6E6E7FFFEFE
+          FFFFFEFFFFFFFFFEFFFFFEFFFFFFFFFEFEFFFFFEFEFFFFFEFFFFFFFFFFFFFFFF
+          FFFFFEFEFFFFE7E7E6FFE7E6E7FFE6E6E6FF000100FFE6E6E7FFE6E6E7FFFFFF
+          FEFFFEFFFFFFFFFFFFFFFFFEFFFFFFFFFEFFFFFFFEFFFFFFFFFFFEFFFFFF0001
+          01FF737273FFE6E7E7FFE6E6E7FFE6E7E6FF000000FFE6E6E6FFE6E7E6FFFFFF
+          FFFFFFFFFFFFFFFFFEFFFFFFFFFFFEFFFEFFFFFFFFFFFFFFFFFFFFFEFFFF0000
+          00FFFFFFFEFFE6E6E7FFE7E6E6FFE6E6E6FF000001FFE6E6E6FFE6E6E6FFFEFF
+          FEFFFFFFFFFFFFFFFFFFFEFEFFFFFFFEFEFFFFFFFFFFFFFEFFFFFFFEFFFF0001
+          01FFFEFFFFFFE6E6E6FFE6E6E6FF000001FFE6E6E7FFE6E6E7FFE7E6E6FFFFFF
+          FEFFFEFFFEFFFFFFFEFFFEFFFEFFFFFFFFFFFEFEFFFFFFFEFFFFFEFFFFFFFFFF
+          FEFF010000FF000000FF000100FF000000FFE6E6E7FFE6E6E6FFE7E6E6FFFFFE
+          FFFFFFFFFEFFFEFFFFFFFFFFFFFFFEFEFEFFFFFFFFFFFFFFFEFFFEFEFFFFFFFF
+          FFFF000101FF000100FF010000FFE6E6E6FFE6E7E6FFE6E6E6FFE6E6E7FFFFFF
+          FFFFFFFFFFFFFFFEFFFFFFFFFFFF
+        }
         OnClick = SpeedButton1Click
       end
       object DBEdit3: TDBEdit
-        Left = 584
+        Left = 384
         Height = 28
-        Top = 80
+        Top = 88
         Width = 68
         DataField = 'usu_codigo'
         DataSource = dtSourceEmprestimo
         Alignment = taRightJustify
         MaxLength = 0
         TabOrder = 2
+      end
+      object DBEdit4: TDBEdit
+        Left = 384
+        Height = 28
+        Top = 136
+        Width = 84
+        DataField = 'obr_codigo'
+        DataSource = dtSourceEmprestimo
+        Alignment = taRightJustify
+        MaxLength = 0
+        TabOrder = 3
+      end
+      object DBEdit5: TDBEdit
+        Left = 504
+        Height = 28
+        Top = 136
+        Width = 248
+        DataField = 'titulo'
+        DataSource = dtSourceEmprestimo
+        MaxLength = 50
+        TabOrder = 4
+      end
+      object DBMemo1: TDBMemo
+        Left = 288
+        Height = 113
+        Top = 336
+        Width = 672
+        DataField = 'Observacao'
+        DataSource = dtSourceEmprestimo
+        TabOrder = 5
+      end
+      object DBDateEdit1: TDBDateEdit
+        Left = 287
+        Height = 28
+        Top = 264
+        Width = 257
+        CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+        DateOrder = doNone
+        ButtonWidth = 29
+        NumGlyphs = 1
+        MaxLength = 0
+        TabOrder = 6
+        DataField = 'data_emprestimo'
+        DataSource = dtSourceEmprestimo
+      end
+      object DBDateEdit2: TDBDateEdit
+        Left = 720
+        Height = 28
+        Top = 264
+        Width = 240
+        CalendarDisplaySettings = [dsShowHeadings, dsShowDayNames]
+        DateOrder = doNone
+        ButtonWidth = 29
+        NumGlyphs = 1
+        MaxLength = 0
+        TabOrder = 7
+        DataField = 'data_prevista_devolucao'
+        DataSource = dtSourceEmprestimo
+      end
+      object DBEdit6: TDBEdit
+        Left = 384
+        Height = 28
+        Top = 176
+        Width = 84
+        DataField = 'exe_numero'
+        DataSource = dtSourceEmprestimo
+        Alignment = taRightJustify
+        MaxLength = 0
+        TabOrder = 8
+      end
+      object SpeedButton2: TSpeedButton
+        Left = 472
+        Height = 28
+        Top = 136
+        Width = 29
+        OnClick = SpeedButton2Click
+      end
+      object SpeedButton3: TSpeedButton
+        Left = 472
+        Height = 28
+        Top = 176
+        Width = 29
+        OnClick = SpeedButton3Click
+      end
+      object DBEdit7: TDBEdit
+        Left = 504
+        Height = 28
+        Top = 176
+        Width = 248
+        DataField = 'situacao'
+        DataSource = dtSourceEmprestimo
+        MaxLength = 1
+        TabOrder = 9
+      end
+      object DBNavigator1: TDBNavigator
+        Left = 488
+        Height = 31
+        Top = 560
+        Width = 301
+        BevelOuter = bvNone
+        ChildSizing.EnlargeHorizontal = crsScaleChilds
+        ChildSizing.EnlargeVertical = crsScaleChilds
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 100
+        ClientHeight = 31
+        ClientWidth = 301
+        DataSource = dtSourceEmprestimo
+        OnClick = DBNavigator1Click
+        Options = []
+        TabOrder = 10
       end
     end
   end
@@ -130,12 +294,109 @@ object frmEmprestimo: TfrmEmprestimo
     UpdateObject = updQryEmprestimo
     Active = True
     SQL.Strings = (
-      'select emprestimo.*,usuario.nome from emprestimo,usuario'
+      'select emprestimo.*,usuario.nome,obra.titulo,exemplar.situacao'
+      'from emprestimo,usuario,obra,exemplar'
       'where emprestimo.usu_codigo = usuario.usu_codigo'
+      'and emprestimo.obr_codigo = obra.obr_codigo'
     )
     Params = <>
     Left = 1336
     Top = 168
+    object qryEmprestimoemp_codigo: TLargeintField
+      FieldKind = fkData
+      FieldName = 'emp_codigo'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object qryEmprestimousu_codigo: TLargeintField
+      FieldKind = fkData
+      FieldName = 'usu_codigo'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryEmprestimoobr_codigo: TLargeintField
+      FieldKind = fkData
+      FieldName = 'obr_codigo'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryEmprestimoexe_numero: TLargeintField
+      FieldKind = fkData
+      FieldName = 'exe_numero'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryEmprestimodata_emprestimo: TDateTimeField
+      FieldKind = fkData
+      FieldName = 'data_emprestimo'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryEmprestimodata_prevista_devolucao: TDateTimeField
+      FieldKind = fkData
+      FieldName = 'data_prevista_devolucao'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object qryEmprestimoObservacao: TMemoField
+      FieldKind = fkData
+      FieldName = 'Observacao'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      BlobType = ftMemo
+      Transliterate = False
+    end
+    object qryEmprestimonome: TStringField
+      FieldKind = fkData
+      FieldName = 'nome'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 50
+    end
+    object qryEmprestimotitulo: TStringField
+      FieldKind = fkData
+      FieldName = 'titulo'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 50
+    end
+    object qryEmprestimosituacao: TStringField
+      FieldKind = fkData
+      FieldName = 'situacao'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 1
+    end
   end
   object updQryEmprestimo: TZUpdateSQL
     DeleteSQL.Strings = (
@@ -171,7 +432,7 @@ object frmEmprestimo: TfrmEmprestimo
     )
     UseSequenceFieldForRefreshSQL = False
     Left = 1336
-    Top = 308
+    Top = 248
     ParamData = <    
       item
         DataType = ftUnknown
@@ -232,7 +493,7 @@ object frmEmprestimo: TfrmEmprestimo
   object dtSourceUsuario: TDataSource
     DataSet = dmConexao.qryUsuario
     OnDataChange = dtSourceUsuarioDataChange
-    Left = 1354
-    Top = 417
+    Left = 1344
+    Top = 336
   end
 end

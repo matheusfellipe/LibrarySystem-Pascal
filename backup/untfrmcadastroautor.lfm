@@ -76,7 +76,7 @@ object frmCadastroAutor: TfrmCadastroAutor
   object dtSourceAutor: TDataSource
     DataSet = dmConexao.qryAutor
     OnDataChange = dtSourceAutorDataChange
-    Left = 760
+    Left = 816
     Top = 376
   end
 end

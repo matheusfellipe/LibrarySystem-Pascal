@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, DBGrids, DBCtrls,
-  ComCtrls;
+  ComCtrls, StdCtrls;
 
 type
 
@@ -17,14 +17,15 @@ type
     DBGrid1: TDBGrid;
     DBNavigator1: TDBNavigator;
     DBNavigator2: TDBNavigator;
-    descricao: TDBText;
     dtSourceAssunto: TDataSource;
+    Label1: TLabel;
     PageControl1: TPageControl;
     Consultar: TTabSheet;
     Editar: TTabSheet;
     procedure DBEdit1Change(Sender: TObject);
     procedure descricaoClick(Sender: TObject);
     procedure dtSourceAssuntoDataChange(Sender: TObject; Field: TField);
+    procedure FormCreate(Sender: TObject);
   private
 
   public
@@ -42,6 +43,11 @@ implementation
 
 procedure TfrmCadastroAssunto.dtSourceAssuntoDataChange(Sender: TObject;
   Field: TField);
+begin
+
+end;
+
+procedure TfrmCadastroAssunto.FormCreate(Sender: TObject);
 begin
 
 end;

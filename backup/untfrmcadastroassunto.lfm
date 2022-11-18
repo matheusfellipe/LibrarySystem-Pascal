@@ -7,15 +7,16 @@ object frmCadastroAssunto: TfrmCadastroAssunto
   ClientHeight = 498
   ClientWidth = 823
   DesignTimePPI = 120
+  Position = poScreenCenter
   LCLVersion = '2.2.4.0'
   object PageControl1: TPageControl
     Left = 0
     Height = 376
     Top = 0
     Width = 823
-    ActivePage = Consultar
+    ActivePage = Editar
     Align = alTop
-    TabIndex = 0
+    TabIndex = 1
     TabOrder = 0
     object Consultar: TTabSheet
       Caption = 'Consultar'
@@ -40,7 +41,7 @@ object frmCadastroAssunto: TfrmCadastroAssunto
         Left = 104
         Height = 28
         Top = 32
-        Width = 100
+        Width = 176
         DataField = 'descricao'
         DataSource = dtSourceAssunto
         MaxLength = 50
@@ -65,14 +66,6 @@ object frmCadastroAssunto: TfrmCadastroAssunto
         Options = []
         TabOrder = 1
       end
-      object descricao: TDBText
-        Left = 32
-        Height = 20
-        Top = 32
-        Width = 63
-        ParentColor = False
-        OnClick = descricaoClick
-      end
       object DBNavigator1: TDBNavigator
         Left = 120
         Height = 31
@@ -90,6 +83,14 @@ object frmCadastroAssunto: TfrmCadastroAssunto
         DataSource = dtSourceAssunto
         Options = []
         TabOrder = 2
+      end
+      object Label1: TLabel
+        Left = 32
+        Height = 20
+        Top = 32
+        Width = 65
+        Caption = 'Descrição'
+        ParentColor = False
       end
     end
   end

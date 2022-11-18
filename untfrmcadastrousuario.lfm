@@ -5,8 +5,8 @@ object frmCadastroUsuario: TfrmCadastroUsuario
   Width = 1186
   Align = alClient
   Caption = 'Man de Usuário'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 552
+  ClientWidth = 1186
   DesignTimePPI = 120
   Menu = MainMenu1
   Position = poScreenCenter
@@ -16,8 +16,8 @@ object frmCadastroUsuario: TfrmCadastroUsuario
     Height = 418
     Top = 0
     Width = 1080
-    ActivePage = Consultar
-    TabIndex = 0
+    ActivePage = Editar
+    TabIndex = 1
     TabOrder = 0
     object Consultar: TTabSheet
       Caption = 'Consultar'
@@ -40,161 +40,118 @@ object frmCadastroUsuario: TfrmCadastroUsuario
       ClientHeight = 385
       ClientWidth = 1072
       object Nome: TDBText
-        Left = 40
+        Left = 248
         Height = 20
-        Top = 56
+        Top = 16
         Width = 41
         ParentColor = False
         OnClick = NomeClick
       end
       object CPF: TLabel
-        Left = 40
+        Left = 248
         Height = 20
-        Top = 152
+        Top = 88
         Width = 24
         Caption = 'CPF'
         ParentColor = False
       end
       object Telefone: TLabel
-        Left = 40
+        Left = 511
         Height = 20
-        Top = 256
+        Top = 88
         Width = 57
         Caption = 'Telefone'
         ParentColor = False
       end
       object DBEdit2: TDBEdit
-        Left = 40
+        Left = 248
         Height = 28
-        Top = 104
-        Width = 100
+        Top = 48
+        Width = 516
         DataField = 'nome'
         DataSource = dtSourceUsuario
         MaxLength = 50
         TabOrder = 0
       end
       object DBEdit3: TDBEdit
-        Left = 40
+        Left = 248
         Height = 28
-        Top = 200
-        Width = 100
+        Top = 112
+        Width = 248
         DataField = 'cpf'
         DataSource = dtSourceUsuario
         MaxLength = 11
         TabOrder = 1
       end
       object DBEdit4: TDBEdit
-        Left = 40
+        Left = 512
         Height = 28
-        Top = 296
-        Width = 100
+        Top = 112
+        Width = 252
         DataField = 'telefone'
         DataSource = dtSourceUsuario
         MaxLength = 20
         TabOrder = 2
       end
-      object Logradouro: TDBText
-        Left = 376
-        Height = 20
-        Top = 56
-        Width = 78
-        ParentColor = False
-      end
       object DBEdit1: TDBEdit
-        Left = 376
+        Left = 248
         Height = 28
-        Top = 104
-        Width = 100
+        Top = 176
+        Width = 416
         DataField = 'logradouro'
         DataSource = dtSourceUsuario
         MaxLength = 50
         TabOrder = 3
       end
       object DBEdit5: TDBEdit
-        Left = 376
+        Left = 680
         Height = 28
-        Top = 200
-        Width = 100
+        Top = 176
+        Width = 84
         DataField = 'numero'
         DataSource = dtSourceUsuario
         MaxLength = 6
         TabOrder = 4
       end
-      object Numero: TDBText
-        Left = 376
-        Height = 20
-        Top = 152
-        Width = 54
-        ParentColor = False
-        OnClick = NumeroClick
-      end
       object DBEdit6: TDBEdit
-        Left = 376
+        Left = 520
         Height = 28
-        Top = 296
-        Width = 100
+        Top = 232
+        Width = 244
         DataField = 'bairro'
         DataSource = dtSourceUsuario
         MaxLength = 50
         TabOrder = 5
       end
-      object Bairro: TDBText
-        Left = 376
-        Height = 20
-        Top = 256
-        Width = 40
-        ParentColor = False
-      end
       object DBEdit7: TDBEdit
-        Left = 688
+        Left = 248
         Height = 28
-        Top = 104
-        Width = 100
+        Top = 232
+        Width = 172
         DataField = 'cidade'
         DataSource = dtSourceUsuario
         MaxLength = 50
         TabOrder = 6
       end
-      object Cidade: TDBText
-        Left = 688
-        Height = 20
-        Top = 56
-        Width = 47
-        ParentColor = False
-      end
       object DBEdit8: TDBEdit
-        Left = 688
+        Left = 440
         Height = 28
-        Top = 200
-        Width = 100
+        Top = 232
+        Width = 64
         DataField = 'uf'
         DataSource = dtSourceUsuario
         MaxLength = 2
         TabOrder = 7
       end
-      object UF: TDBText
-        Left = 688
-        Height = 20
-        Top = 152
-        Width = 17
-        ParentColor = False
-      end
       object DBEdit9: TDBEdit
-        Left = 688
+        Left = 248
         Height = 28
         Top = 296
-        Width = 100
+        Width = 256
         DataField = 'complemento'
         DataSource = dtSourceUsuario
         MaxLength = 50
         TabOrder = 8
-      end
-      object Complemento: TDBText
-        Left = 688
-        Height = 20
-        Top = 256
-        Width = 95
-        ParentColor = False
       end
       object DBNavigator1: TDBNavigator
         Left = 267
@@ -214,6 +171,75 @@ object frmCadastroUsuario: TfrmCadastroUsuario
         Options = []
         TabOrder = 9
       end
+      object Label1: TLabel
+        Left = 248
+        Height = 20
+        Top = 152
+        Width = 78
+        Caption = 'Logradouro'
+        ParentColor = False
+      end
+      object Label2: TLabel
+        Left = 680
+        Height = 20
+        Top = 152
+        Width = 54
+        Caption = 'Número'
+        ParentColor = False
+      end
+      object Label3: TLabel
+        Left = 248
+        Height = 20
+        Top = 208
+        Width = 47
+        Caption = 'Cidade'
+        ParentColor = False
+      end
+      object Label4: TLabel
+        Left = 440
+        Height = 20
+        Top = 208
+        Width = 17
+        Caption = 'UF'
+        ParentColor = False
+      end
+      object Label5: TLabel
+        Left = 520
+        Height = 20
+        Top = 208
+        Width = 40
+        Caption = 'Bairro'
+        ParentColor = False
+      end
+      object Label6: TLabel
+        Left = 248
+        Height = 20
+        Top = 272
+        Width = 95
+        Caption = 'Complemento'
+        ParentColor = False
+        OnClick = Label6Click
+      end
+      object DBEdit10: TDBEdit
+        Left = 528
+        Height = 28
+        Top = 296
+        Width = 236
+        DataField = 'cep'
+        DataSource = dtSourceUsuario
+        DoubleBuffered = False
+        MaxLength = 8
+        ParentDoubleBuffered = False
+        TabOrder = 10
+      end
+      object Label7: TLabel
+        Left = 528
+        Height = 20
+        Top = 272
+        Width = 25
+        Caption = 'CEP'
+        ParentColor = False
+      end
     end
   end
   object dtSourceUsuario: TDataSource
@@ -222,7 +248,7 @@ object frmCadastroUsuario: TfrmCadastroUsuario
     Top = 432
   end
   object MainMenu1: TMainMenu
-    Left = 60
-    Top = 430
+    Left = 1056
+    Top = 432
   end
 end
