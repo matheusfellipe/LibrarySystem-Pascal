@@ -1,7 +1,7 @@
 object frmEmprestimo: TfrmEmprestimo
-  Left = 284
+  Left = 222
   Height = 810
-  Top = 147
+  Top = 76
   Width = 1476
   Caption = 'frmEmprestimo'
   ClientHeight = 810
@@ -24,6 +24,7 @@ object frmEmprestimo: TfrmEmprestimo
       Caption = 'Emprestar'
       ClientHeight = 761
       ClientWidth = 1232
+      OnContextPopup = EmprestarContextPopup
       object DBEdit1: TDBEdit
         Left = 240
         Height = 28
@@ -88,20 +89,149 @@ object frmEmprestimo: TfrmEmprestimo
         Caption = 'Usuário'
         ParentColor = False
       end
+      object DBEdit2: TDBEdit
+        Left = 680
+        Height = 28
+        Top = 80
+        Width = 264
+        DataField = 'nome'
+        DataSource = dtSourceEmprestimo
+        MaxLength = 50
+        TabOrder = 1
+      end
+      object SpeedButton1: TSpeedButton
+        Left = 960
+        Height = 28
+        Top = 80
+        Width = 29
+        OnClick = SpeedButton1Click
+      end
+      object DBEdit3: TDBEdit
+        Left = 584
+        Height = 28
+        Top = 80
+        Width = 68
+        DataField = 'usu_codigo'
+        DataSource = dtSourceEmprestimo
+        Alignment = taRightJustify
+        MaxLength = 0
+        TabOrder = 2
+      end
     end
   end
   object dtSourceEmprestimo: TDataSource
-    Left = 1344
+    DataSet = qryEmprestimo
+    OnDataChange = dtSourceEmprestimoDataChange
+    Left = 1336
     Top = 64
   end
   object qryEmprestimo: TZQuery
+    Connection = dmConexao.dbCon
+    UpdateObject = updQryEmprestimo
+    SQL.Strings = (
+      'select emprestimo.*,usuario.nome from emprestimo,usuario'
+      'where emprestimo.usu_codigo = usuario.usu_codigo'
+    )
     Params = <>
     Left = 1336
     Top = 168
   end
   object updQryEmprestimo: TZUpdateSQL
+    DeleteSQL.Strings = (
+      'DELETE FROM emprestimo'
+      'WHERE'
+      '  ((emprestimo.emp_codigo IS NULL AND :OLD_emp_codigo IS NULL) OR (emprestimo.emp_codigo = :OLD_emp_codigo)) AND'
+      '  emprestimo.usu_codigo = :OLD_usu_codigo AND'
+      '  emprestimo.obr_codigo = :OLD_obr_codigo AND'
+      '  emprestimo.exe_numero = :OLD_exe_numero'
+    )
+    InsertSQL.Strings = (
+      'INSERT INTO emprestimo'
+      '  (emp_codigo, usu_codigo, obr_codigo, exe_numero, data_emprestimo, data_prevista_devolucao, '
+      '   Observacao)'
+      'VALUES'
+      '  (:emp_codigo, :usu_codigo, :obr_codigo, :exe_numero, :data_emprestimo, '
+      '   :data_prevista_devolucao, :Observacao)'
+    )
+    ModifySQL.Strings = (
+      'UPDATE emprestimo SET'
+      '  emp_codigo = :emp_codigo,'
+      '  usu_codigo = :usu_codigo,'
+      '  obr_codigo = :obr_codigo,'
+      '  exe_numero = :exe_numero,'
+      '  data_emprestimo = :data_emprestimo,'
+      '  data_prevista_devolucao = :data_prevista_devolucao,'
+      '  Observacao = :Observacao'
+      'WHERE'
+      '  ((emprestimo.emp_codigo IS NULL AND :OLD_emp_codigo IS NULL) OR (emprestimo.emp_codigo = :OLD_emp_codigo)) AND'
+      '  emprestimo.usu_codigo = :OLD_usu_codigo AND'
+      '  emprestimo.obr_codigo = :OLD_obr_codigo AND'
+      '  emprestimo.exe_numero = :OLD_exe_numero'
+    )
     UseSequenceFieldForRefreshSQL = False
     Left = 1336
     Top = 308
+    ParamData = <    
+      item
+        DataType = ftUnknown
+        Name = 'emp_codigo'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'usu_codigo'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'obr_codigo'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'exe_numero'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'data_emprestimo'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'data_prevista_devolucao'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'Observacao'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'OLD_emp_codigo'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'OLD_usu_codigo'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'OLD_obr_codigo'
+        ParamType = ptUnknown
+      end    
+      item
+        DataType = ftUnknown
+        Name = 'OLD_exe_numero'
+        ParamType = ptUnknown
+      end>
+  end
+  object dtSourceUsuario: TDataSource
+    DataSet = dmConexao.qryUsuario
+    OnDataChange = dtSourceUsuarioDataChange
+    Left = 1354
+    Top = 417
   end
 end

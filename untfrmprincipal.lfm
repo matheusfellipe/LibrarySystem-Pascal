@@ -1,7 +1,7 @@
 object frmPrincipal: TfrmPrincipal
-  Left = 872
+  Left = 492
   Height = 298
-  Top = 449
+  Top = 335
   Width = 776
   Caption = 'Sistema de Controle de Biblioteca'
   ClientHeight = 273

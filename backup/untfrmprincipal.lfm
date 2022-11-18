@@ -1,7 +1,7 @@
 object frmPrincipal: TfrmPrincipal
-  Left = 872
+  Left = 492
   Height = 298
-  Top = 449
+  Top = 335
   Width = 776
   Caption = 'Sistema de Controle de Biblioteca'
   ClientHeight = 273
@@ -9,6 +9,7 @@ object frmPrincipal: TfrmPrincipal
   DesignTimePPI = 120
   Menu = MainMenu1
   OnCreate = FormCreate
+  Position = poScreenCenter
   LCLVersion = '2.2.4.0'
   object StatusBar1: TStatusBar
     Left = 0

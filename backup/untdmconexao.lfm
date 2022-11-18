@@ -235,6 +235,7 @@ object dmConexao: TdmConexao
   object qryObra: TZQuery
     Connection = dbCon
     UpdateObject = qryUpdateObra
+    Active = True
     SQL.Strings = (
       'select * from obra'
     )

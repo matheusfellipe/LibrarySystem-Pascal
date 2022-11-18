@@ -44,7 +44,7 @@ object frmCadastroObra: TfrmCadastroObra
         Width = 408
         DataField = 'titulo'
         DataSource = dtSourceObra
-        MaxLength = 50
+        MaxLength = 0
         TabOrder = 0
         OnChange = DBEdit2Change
       end
@@ -143,8 +143,8 @@ object frmCadastroObra: TfrmCadastroObra
     Height = 506
     Top = 360
     Width = 912
-    ActivePage = TabSheet3
-    TabIndex = 2
+    ActivePage = TabSheet1
+    TabIndex = 0
     TabOrder = 1
     OnChange = PageControl2Change
     object TabSheet1: TTabSheet

@@ -10,7 +10,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="2"/>
         <TopLine Value="16"/>
-        <CursorPos Y="33"/>
+        <CursorPos Y="27"/>
         <UsageCount Value="1030"/>
         <Loaded Value="True"/>
       </Unit>
@@ -21,11 +21,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="untFrmPrincipal"/>
-        <EditorIndex Value="5"/>
-        <TopLine Value="61"/>
-        <CursorPos X="3" Y="63"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="8"/>
+        <CursorPos X="27" Y="116"/>
         <UsageCount Value="1030"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="untdmconexao.pas"/>
@@ -34,9 +35,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <UnitName Value="untDmConexao"/>
-        <EditorIndex Value="6"/>
+        <EditorIndex Value="9"/>
         <TopLine Value="6"/>
-        <CursorPos X="36" Y="14"/>
+        <CursorPos X="47" Y="17"/>
         <UsageCount Value="1030"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -59,7 +60,7 @@
         <ComponentName Value="frmCadastroAutor"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="11"/>
         <TopLine Value="21"/>
         <CursorPos X="63" Y="28"/>
         <UsageCount Value="1028"/>
@@ -72,7 +73,7 @@
         <ComponentName Value="frmCadastroEditora"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="4"/>
+        <EditorIndex Value="7"/>
         <TopLine Value="33"/>
         <CursorPos X="61" Y="45"/>
         <UsageCount Value="1027"/>
@@ -84,7 +85,7 @@
         <ComponentName Value="frmCadastroAssunto"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="7"/>
+        <EditorIndex Value="10"/>
         <TopLine Value="35"/>
         <CursorPos X="55" Y="39"/>
         <UsageCount Value="1027"/>
@@ -98,7 +99,7 @@
         <ResourceBaseClass Value="Form"/>
         <EditorIndex Value="1"/>
         <TopLine Value="146"/>
-        <CursorPos X="43" Y="151"/>
+        <CursorPos X="34" Y="159"/>
         <UsageCount Value="1026"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -109,135 +110,172 @@
         <ComponentName Value="frmEmprestimo"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="3"/>
-        <TopLine Value="34"/>
-        <CursorPos X="42" Y="45"/>
-        <UsageCount Value="81"/>
+        <TopLine Value="82"/>
+        <CursorPos X="3" Y="87"/>
+        <UsageCount Value="94"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="upesquisa.lfm"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="33"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="upesquisa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmPesquisa"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="113"/>
+        <CursorPos Y="20"/>
+        <UsageCount Value="33"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\Downloads\upesquisa.pas"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="44"/>
+        <CursorPos X="20" Y="52"/>
+        <UsageCount Value="16"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="C:\lazarus\lcl\lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <EditorIndex Value="5"/>
+        <UsageCount Value="15"/>
+        <Loaded Value="True"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
       <Position>
-        <Filename Value="untfrmcadastroobra.pas"/>
-        <Caret Line="118" Column="35" TopLine="111"/>
+        <Filename Value="untfrmprincipal.pas"/>
+        <Caret Line="97" TopLine="87"/>
       </Position>
       <Position>
-        <Filename Value="untfrmcadastroobra.pas"/>
-        <Caret Line="119" Column="35" TopLine="112"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroobra.pas"/>
-        <Caret Line="120" Column="35" TopLine="113"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroobra.pas"/>
-        <Caret Line="128" Column="22" TopLine="114"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroobra.pas"/>
-        <Caret Line="129" Column="22" TopLine="115"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroobra.pas"/>
-        <Caret Line="130" Column="32" TopLine="122"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroobra.pas"/>
-        <Caret Line="154" TopLine="136"/>
+        <Filename Value="..\..\Downloads\upesquisa.pas"/>
+        <Caret Line="11" Column="36"/>
       </Position>
       <Position>
         <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="34" Column="35" TopLine="24"/>
+        <Caret Line="85" Column="18" TopLine="68"/>
       </Position>
       <Position>
         <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="33" Column="48" TopLine="25"/>
+        <Caret Line="89" Column="55" TopLine="71"/>
       </Position>
       <Position>
         <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="36" Column="42" TopLine="26"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroobra.pas"/>
-        <Caret Line="152" Column="37" TopLine="142"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroobra.pas"/>
-        <Caret Line="151" Column="37" TopLine="141"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroobra.pas"/>
-        <Caret Line="160" Column="18" TopLine="143"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroobra.pas"/>
-        <Caret Line="164" Column="20" TopLine="146"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroobra.pas"/>
-        <Caret Line="159" Column="31" TopLine="146"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroobra.pas"/>
-        <Caret Line="158" Column="31" TopLine="145"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroobra.pas"/>
-        <Caret Line="159" Column="30" TopLine="146"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroobra.pas"/>
-        <Caret Line="158" Column="30" TopLine="145"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroobra.pas"/>
-        <Caret Line="157" Column="30" TopLine="144"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroobra.pas"/>
-        <Caret Line="159" Column="21" TopLine="145"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroobra.pas"/>
-        <Caret Line="158" Column="34" TopLine="146"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroobra.pas"/>
-        <Caret Line="161" Column="31" TopLine="146"/>
-      </Position>
-      <Position>
-        <Filename Value="untfrmcadastroobra.pas"/>
-        <Caret Line="160" Column="31" TopLine="145"/>
+        <Caret Line="85" Column="34" TopLine="72"/>
       </Position>
       <Position>
         <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="35" Column="25" TopLine="27"/>
+        <Caret Line="90" Column="2" TopLine="74"/>
       </Position>
       <Position>
         <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="37" Column="40" TopLine="28"/>
+        <Caret Line="77" Column="8" TopLine="67"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmprincipal.pas"/>
+        <Caret Line="96" Column="35" TopLine="87"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmprincipal.pas"/>
+        <Caret Line="97" Column="3" TopLine="51"/>
       </Position>
       <Position>
         <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="38" Column="40" TopLine="29"/>
+        <Caret Line="14" Column="53" TopLine="5"/>
       </Position>
       <Position>
         <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="44" Column="35" TopLine="30"/>
+        <Caret Line="64" Column="57" TopLine="80"/>
       </Position>
       <Position>
         <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="41" Column="34" TopLine="31"/>
+        <Caret Line="70" Column="3" TopLine="67"/>
       </Position>
       <Position>
         <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="43" Column="29" TopLine="32"/>
+        <Caret Line="96" Column="51" TopLine="81"/>
       </Position>
       <Position>
         <Filename Value="untfrmemprestimo.pas"/>
-        <Caret Line="42" Column="46" TopLine="33"/>
+        <Caret Line="95" Column="51" TopLine="80"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmemprestimo.pas"/>
+        <Caret Line="94" Column="51" TopLine="79"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmemprestimo.pas"/>
+        <Caret Line="93" Column="51" TopLine="78"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmemprestimo.pas"/>
+        <Caret Line="92" Column="51" TopLine="77"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmemprestimo.pas"/>
+        <Caret Line="91" Column="51" TopLine="76"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmemprestimo.pas"/>
+        <Caret Line="90" Column="51" TopLine="75"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmemprestimo.pas"/>
+        <Caret Line="89" Column="51" TopLine="74"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmemprestimo.pas"/>
+        <Caret Line="88" Column="51" TopLine="73"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmemprestimo.pas"/>
+        <Caret Line="87" Column="51" TopLine="72"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmemprestimo.pas"/>
+        <Caret Line="86" Column="51" TopLine="71"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmemprestimo.pas"/>
+        <Caret Line="85" Column="51" TopLine="70"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmemprestimo.pas"/>
+        <Caret Line="84" Column="51" TopLine="69"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmemprestimo.pas"/>
+        <Caret Line="96" Column="51" TopLine="81"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmemprestimo.pas"/>
+        <Caret Line="70" Column="3" TopLine="78"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmemprestimo.pas"/>
+        <Caret Line="99" Column="40" TopLine="82"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmprincipal.pas"/>
+        <Caret Line="102" Column="3" TopLine="87"/>
+      </Position>
+      <Position>
+        <Filename Value="untfrmprincipal.pas"/>
+        <Caret Line="68" Column="27" TopLine="54"/>
       </Position>
     </JumpHistory>
     <RunParams>

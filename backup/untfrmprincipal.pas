@@ -60,28 +60,50 @@ end;
 
 procedure TfrmPrincipal.MenuItem2Click(Sender: TObject);
 begin
+  try
+  frmCadastroUsuario := TFrmCadastroUsuario.create(self);
   frmCadastroUsuario.showmodal();
+
+  finally
+  frmCadastroUsuario.free;
+  end;
+
 
 end;
 
 procedure TfrmPrincipal.MenuItem3Click(Sender: TObject);
 begin
-
+  try
+  frmCadastroObra := TFrmCadastroObra.create(self);
   frmCadastroObra.showmodal();
+  finally
+  frmCadastroObra.free;
+  end;
+
   ;
 end;
 
 procedure TfrmPrincipal.MenuItem4Click(Sender: TObject);
 begin
-
+  try
+  frmCadastroAutor := TFrmCadastroAutor.create(self);
   frmCadastroAutor.showmodal();
-;;
+  finally
+  frmCadastroAutor.free;
+  end;
+
+
 end;
 
 procedure TfrmPrincipal.MenuItem5Click(Sender: TObject);
 begin
-
+  try
+  frmCadastroAssunto := TFrmCadastroAssunto.create(self);
   frmCadastroAssunto.showmodal();
+  finally
+  frmCadastroAssunto.free;
+  end;
+
 
 end;
 
@@ -94,7 +116,14 @@ end;
 
 procedure TfrmPrincipal.MenuItem7Click(Sender: TObject);
 begin
+  try
+  frmEmprestimo := TFrmEmprestimo.create(self);
   frmEmprestimo.showmodal();
+
+  finally
+  frmEmprestimo.free;
+  end;
+
 end;
 
 procedure TfrmPrincipal.MenuItem8Click(Sender: TObject);
